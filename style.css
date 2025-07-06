@@ -1,0 +1,141 @@
+:root {
+  --usf-green: #006747;
+  --usf-gold: #FDBB30;
+  --white: #FFFFFF;
+  --text-dark: #333333;
+  --link-hover: #FDBB30;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--usf-green);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--usf-gold);
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.hero {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  text-align: center;
+  border-left: 5px solid var(--usf-green);
+}
+
+h2 {
+  color: var(--usf-green);
+  border-bottom: 2px solid var(--usf-gold);
+  padding-bottom: 0.3rem;
+}
+
+.cta-update {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta-update input {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid var(--usf-green);
+  border-radius: 5px;
+}
+
+.cta-update button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: var(--usf-green);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-update button:hover {
+  background-color: #004c35;
+}
+
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.service {
+  background-color: #fdfdfd;
+  border: 2px solid var(--usf-green);
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: var(--usf-green);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
